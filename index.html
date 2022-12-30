@@ -73,9 +73,55 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-Linux大作业" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <article id="post-linux大作业" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
-    <a href="/2022/12/30/Linux%E5%A4%A7%E4%BD%9C%E4%B8%9A/" class="article-date">
+    <a href="/2022/12/30/linux%E5%A4%A7%E4%BD%9C%E4%B8%9A/" class="article-date">
+  <time class="dt-published" datetime="2022-12-30T17:58:15.000Z" itemprop="datePublished">2022-12-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2022/12/30/linux%E5%A4%A7%E4%BD%9C%E4%B8%9A/">linux大作业</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>1.安装nodejs:生成静态页面<br>sudo apt-get install nodejs<br>用nodejs -v 检查版本看是否安装上<br>2.安装npm：一会用来安装hexo<br>sudo apt-get insall npm<br>3.正式安装hexo<br>sudo npm install -g hexo</p>
+<p>预备工作搞定，为了方便处理先建立一个hexo的文件夹<br>mkdir hexo<br>cd hexo<br>建立自己的博客 hexo init blog<br>cd blog<br>npm install<br>通过查看版本可以看到自己的hexo的构建hexo -v</p>
+<p>启动自己本地的博客<br>hexo g#生成静态网页<br>hexo s#运行本地服务器<br>这个时候进入<a href="http://localhost:4000这个网站就可以看到自己本地的博客了">http://localhost:4000这个网站就可以看到自己本地的博客了</a></p>
+<p>@2：将本地博客部署到git上这样就可以直接访问了</p>
+<p>步骤1，注册一个git账户<br>步骤2，设置自己的user.name user.eamil:<br>git config –global user.name “chm0123”<br>gut config –global user.email”<a href="mailto:&#x32;&#54;&#50;&#x38;&#57;&#x37;&#x37;&#x36;&#x39;&#x35;&#64;&#x71;&#x71;&#46;&#99;&#111;&#109;">&#x32;&#54;&#50;&#x38;&#57;&#x37;&#x37;&#x36;&#x39;&#x35;&#64;&#x71;&#x71;&#46;&#99;&#111;&#109;</a>“<br>步骤3：生成shh密匙（为什么要生成ssh密匙呢是通过密匙登录上github，嗯我是这样理解的）：<br>ssh-****** -t rsa -C user.email然后会有默认的保存地址，不想修改的可以直接回车<br>查看自己的密匙 cat ~&#x2F;.ssh&#x2F;id_rsa<br>将它复制下来添加到自己的github账户里面</p>
+<p>步骤4：创建自己的github仓库，这个时候用户名取的好的效果就出来了，仓库命名格式为“账户名”.github.io（去掉引号）</p>
+<p>步骤五：修改自己的博客配置文件<br>先进入自己的博客命名的位置<br>然后打开_config.yml文件<br>直接拉到最下面修改配置内容：<br>deploy:<br>type: git<br>repo: [email protected]:(用户名）&#x2F;（用户名）.github.io.git #括号里面换成自己的用户名和仓库名,去掉括号<br>branch: master</p>
+<p>hexo g生成静态页面（可以通过爬虫看到这个目前是一个静态网站）<br>hexo d 将文件内容部署到github仓库<br>hexo s布置到本地就是上面那个<br>hexo new “”(编辑新内容）</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/12/30/linux%E5%A4%A7%E4%BD%9C%E4%B8%9A/" data-id="clcatr9ii0000ffjxd2sofdiy" data-title="linux大作业" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-学习笔记" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/12/30/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="article-date">
   <time class="dt-published" datetime="2022-12-30T16:26:11.000Z" itemprop="datePublished">2022-12-30</time>
 </a>
     
@@ -87,7 +133,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/12/30/Linux%E5%A4%A7%E4%BD%9C%E4%B8%9A/">Linux大作业</a>
+      <a class="p-name article-title" href="/2022/12/30/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Linux大作业</a>
     </h1>
   
 
@@ -126,7 +172,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/12/30/Linux%E5%A4%A7%E4%BD%9C%E4%B8%9A/" data-id="clcaqfnv00000najx26gg9keo" data-title="Linux大作业" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/12/30/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-id="clcatr9ir0001ffjx47dlfg66" data-title="Linux大作业" class="article-share-link">Share</a>
       
       
       
@@ -220,7 +266,11 @@
       <ul>
         
           <li>
-            <a href="/2022/12/30/Linux%E5%A4%A7%E4%BD%9C%E4%B8%9A/">Linux大作业</a>
+            <a href="/2022/12/30/linux%E5%A4%A7%E4%BD%9C%E4%B8%9A/">linux大作业</a>
+          </li>
+        
+          <li>
+            <a href="/2022/12/30/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Linux大作业</a>
           </li>
         
           <li>
